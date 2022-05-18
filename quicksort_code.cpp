@@ -4,8 +4,12 @@
 int main()
 {
     // Inserting array of choice (using ints or numbers only)
-    int arr[] = {10, 11, 5, 2, 7, 9, 3, 1, 8, 4, 6};
-    int n = sizeof(arr) / sizeof(arr[0]);
+    int arr[50], n, i;
+    cout << "How many elements would you like to insert?";
+    cin >> n;
+    cout << "\nEnter elements (Press enter after each elements): ";
+    for (i = 0; i < n; i++)
+        cin >> arr[i];
 
     // Printing the inputted array
     cout << "Unsorted Array:" << endl;
