@@ -5,12 +5,18 @@ int main()
 {
     // Inserting array of choice (using ints or numbers only)
     int arr[50], n, i;
-    cout << "How many elements would you like to insert?";
+    cout << "How many elements would you like to insert? ";
     cin >> n;
-    cout << "\nEnter elements (Press enter after each elements): ";
+    cout << "\nEnter elements (Press enter after each elements): " << endl;
     for (i = 0; i < n; i++)
         cin >> arr[i];
 
+    // Initiating Binary Search
+    int x;
+    cout << "What element would you like to get? ";
+    cin >> x;
+
+    cout << "=============================================" << endl;
     // Printing the inputted array
     cout << "Unsorted Array:" << endl;
     PrintArray(arr, n);
@@ -22,8 +28,7 @@ int main()
     PrintArray(arr, n);
     cout << endl;
 
-    // Initiating Binary Search
-    int x = 8;
+    // Printing Binary Search
     int result = binarySearch(arr, x, 0, n - 1);
     if (result == -1)
         printf("\nElement is not found in this Array");
