@@ -16,7 +16,7 @@ int main()
     cout << "What element would you like to get? ";
     cin >> x;
 
-    cout << "=============================================" << endl;
+    cout << "==============================================================================" << endl;
     // Printing the inputted array
     cout << "Unsorted Array:" << endl;
     PrintArray(arr, n);
