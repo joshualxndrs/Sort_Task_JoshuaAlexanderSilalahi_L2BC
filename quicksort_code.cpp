@@ -17,6 +17,7 @@ int main()
     cin >> x;
 
     cout << "==============================================================================" << endl;
+
     // Printing the inputted array
     cout << "Unsorted Array:" << endl;
     PrintArray(arr, n);
